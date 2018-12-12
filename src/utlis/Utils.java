@@ -132,5 +132,4 @@ public class Utils {
         }
         return hexValue.toString();
     }
-
 }

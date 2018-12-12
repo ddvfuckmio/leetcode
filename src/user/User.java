@@ -15,6 +15,11 @@ public class User {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "User{" + "name='" + name + '\'' + ", age=" + age + '}';
+    }
+
     public static void main(String[] args) {
         /** main线程会开拥有独立的线程栈区 */
         int b = 0;

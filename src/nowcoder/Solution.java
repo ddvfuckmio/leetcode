@@ -1,44 +1,33 @@
 package nowcoder;
 
-import codes.designs.TreeNode;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class Solution {
-    public ArrayList<Integer> PrintFromTopToBottom(TreeNode root) {
-        ArrayList<Integer> list = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        if (root != null) queue.offer(root);
-
-        while (!queue.isEmpty()) {
-            TreeNode node = queue.poll();
-            if (node.left != null) queue.offer(node.left);
-            if (node.right != null) queue.offer(node.right);
-            list.add(node.val);
-        }
-
-        return list;
+    public int movingCount(int threshold, int rows, int cols) {
+        boolean[][] flags = new boolean[rows][cols];
+        return movingCount(0, 0, rows, cols, threshold, flags);
     }
 
-    public int maxSum(int[] a, int n) {
-        int max = Integer.MIN_VALUE;
+    private int movingCount(int i, int j, int rows, int cols, int threshold, boolean[][] flags) {
+        if (i < 0 || i >= rows || j < 0 || j >= cols || flags[i][j] || (numSum(i)+numSum(j)>threshold)) {
+            return 0;
+        }
+        flags[i][j] = true;
+        return movingCount(i - 1, j, rows, cols, threshold, flags)
+                + movingCount(i + 1, j, rows, cols, threshold, flags)
+                + movingCount(i, j - 1, rows, cols, threshold, flags)
+                + movingCount(i, j + 1, rows, cols, threshold, flags)
+                + 1;
+    }
+
+    private static int numSum(int i) {
         int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += a[i];
+        while (i > 0) {
+            sum += i % 10;
+            i /= 10;
         }
-        max = sum;
-
-        for (int i = n; i < a.length; i++) {
-            sum = sum - a[i - n] + a[i];
-            max = max > sum ? max : sum;
-        }
-
-        return max;
+        return sum;
     }
 
-    public static void main(String[] args) throws Exception {
-        Solution solution = new Solution();
-    }
+	public static void main(String[] args) throws Exception {
+		Solution solution = new Solution();
+	}
 }
