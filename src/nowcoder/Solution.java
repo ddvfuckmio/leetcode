@@ -1,33 +1,36 @@
 package nowcoder;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Solution {
-    public int movingCount(int threshold, int rows, int cols) {
-        boolean[][] flags = new boolean[rows][cols];
-        return movingCount(0, 0, rows, cols, threshold, flags);
-    }
 
-    private int movingCount(int i, int j, int rows, int cols, int threshold, boolean[][] flags) {
-        if (i < 0 || i >= rows || j < 0 || j >= cols || flags[i][j] || (numSum(i)+numSum(j)>threshold)) {
-            return 0;
-        }
-        flags[i][j] = true;
-        return movingCount(i - 1, j, rows, cols, threshold, flags)
-                + movingCount(i + 1, j, rows, cols, threshold, flags)
-                + movingCount(i, j - 1, rows, cols, threshold, flags)
-                + movingCount(i, j + 1, rows, cols, threshold, flags)
-                + 1;
-    }
+	public ArrayList<Integer> maxInWindows(int[] num, int size) {
+		ArrayList<Integer> list = new ArrayList<>();
 
-    private static int numSum(int i) {
-        int sum = 0;
-        while (i > 0) {
-            sum += i % 10;
-            i /= 10;
-        }
-        return sum;
-    }
+		if (size <= 0) return list;
+
+		for (int i = 0; i < num.length - size + 1; i++) {
+			list.add(help(num, i, size));
+		}
+
+		return list;
+
+	}
+
+	private Integer help(int[] num, int index, int size) {
+		int max = num[index];
+
+		for (int i = index + 1; i < index + size - 1; i++) {
+			max = Math.max(max, num[i]);
+		}
+
+		return max;
+	}
 
 	public static void main(String[] args) throws Exception {
 		Solution solution = new Solution();
+		
 	}
 }
