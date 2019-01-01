@@ -1,56 +1,18 @@
 package nowcoder;
 
-import java.util.ArrayDeque;
+import codes.designs.TreeNode;
 
-import java.util.Comparator;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class Solution {
-	private boolean sign = true;
-	private PriorityQueue<Integer> minQueue = new PriorityQueue<>(new MaxComparator());
-	private PriorityQueue<Integer> maxQueue = new PriorityQueue<>(new MinComparator());
+	ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
+		ArrayList<ArrayList<Integer>> result = new ArrayList<>();
 
-	public void Insert(Integer num) {
-		if (sign) {
-			maxQueue.offer(num);
-			minQueue.offer(maxQueue.poll());
-		} else {
-			minQueue.offer(num);
-			maxQueue.offer(minQueue.poll());
-		}
-		sign = !sign;
-	}
+		if (pRoot == null) return result;
 
-	public Double GetMedian() {
-		if(!sign){
-			return (double) minQueue.peek();
-		}
-		return (double) (minQueue.peek()+maxQueue.peek())/2;
-	}
+		Queue<TreeNode> queue1 = new LinkedList<>();
+		Queue<TreeNode> queue2 = new LinkedList<>();
 
-
-	public static void main(String[] args) throws Exception {
-		Solution solution = new Solution();
-		PriorityQueue<Integer> heap = new PriorityQueue<>();
-		heap.offer(1);
-		heap.offer(10);
-		heap.offer(-1);
-
-		System.out.println(heap);
-
-	}
-
-	class MinComparator implements Comparator<Integer> {
-		@Override
-		public int compare(Integer o1, Integer o2) {
-			return o1 - o2;
-		}
-	}
-
-	class MaxComparator implements Comparator<Integer> {
-		@Override
-		public int compare(Integer o1, Integer o2) {
-			return o2 - o1;
-		}
+		return result;
 	}
 }
