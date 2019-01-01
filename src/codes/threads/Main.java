@@ -23,7 +23,7 @@ class Job implements Runnable {
 	public void run() {
 		try {
 			Thread.sleep(1000 * new Random().nextInt(10));
-			System.out.println(name + " ready...");
+			System.out.println(name + " done...");
 			cyclicBarrier.await();
 		} catch (InterruptedException e) {
 			e.printStackTrace();
@@ -41,7 +41,7 @@ public class Main {
 //		CountDownLatch countDownLatch = new CountDownLatch(10);
 		CyclicBarrier cyclicBarrier = new CyclicBarrier(10);
 
-		ExecutorService executorService = Executors.newFixedThreadPool(10);
+		ExecutorService executorService = Executors.newFixedThreadPool(2);
 		for (int i = 0; i < 10; i++) {
 			executorService.submit(new Job(cyclicBarrier, i + ""));
 		}
