@@ -11,26 +11,24 @@ import java.util.concurrent.*;
  */
 
 class Job implements Runnable {
-	private CyclicBarrier cyclicBarrier;
+	private CountDownLatch countDownLatch;
 	private String name;
 
-	public Job(CyclicBarrier barrier, String name) {
-		this.cyclicBarrier = barrier;
+	public Job(CountDownLatch countDownLatch, String name) {
+		this.countDownLatch = countDownLatch;
 		this.name = name;
 	}
 
 	@Override
 	public void run() {
 		try {
-			Thread.sleep(1000 * new Random().nextInt(10));
-			System.out.println(name + " done...");
-			cyclicBarrier.await();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		} catch (BrokenBarrierException e) {
+//			Thread.sleep(1000);
+//			System.out.println(name + " done... " + Thread.currentThread().getName());
+			System.out.println(System.currentTimeMillis());
+			countDownLatch.countDown();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println(name + " go");
 	}
 }
 
@@ -38,14 +36,15 @@ public class Main {
 
 	public static void main(String[] args) throws InterruptedException {
 
-//		CountDownLatch countDownLatch = new CountDownLatch(10);
-		CyclicBarrier cyclicBarrier = new CyclicBarrier(10);
+		CountDownLatch countDownLatch = new CountDownLatch(10);
 
-		ExecutorService executorService = Executors.newFixedThreadPool(2);
-		for (int i = 0; i < 10; i++) {
-			executorService.submit(new Job(cyclicBarrier, i + ""));
-		}
-
+		ExecutorService executorService = Executors.newSingleThreadScheduledExecutor
+				();
+//		for (int i = 0; i < 10; i++) {
+//			executorService.submit(new Job(countDownLatch, i + ""));
+			((ScheduledExecutorService) executorService).scheduleWithFixedDelay(new Job(countDownLatch, 1 + ""), 3, 1, TimeUnit.SECONDS);
+//		}
+		countDownLatch.await();
 		executorService.shutdown();
 
 	}
