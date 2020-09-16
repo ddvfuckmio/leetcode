@@ -1,0 +1,123 @@
+2020-01-13 11:34:02,661 main - OrthogonalNode{x=0, y=0, value=1, rowPreNode=null}
+2020-01-13 11:34:02,692 main - OrthogonalNode{x=0, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:02,692 main - OrthogonalNode{x=0, y=2, value=1, rowPreNode=null}
+2020-01-13 11:34:02,693 main - OrthogonalNode{x=0, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:02,693 main - OrthogonalNode{x=0, y=4, value=1, rowPreNode=null}
+2020-01-13 11:34:02,693 main - OrthogonalNode{x=1, y=0, value=1, rowPreNode=null}
+2020-01-13 11:34:02,693 main - OrthogonalNode{x=1, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:02,693 main - OrthogonalNode{x=1, y=2, value=1, rowPreNode=null}
+2020-01-13 11:34:02,695 main - OrthogonalNode{x=1, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:02,695 main - OrthogonalNode{x=1, y=4, value=1, rowPreNode=null}
+2020-01-13 11:34:02,695 main - OrthogonalNode{x=2, y=0, value=1, rowPreNode=null}
+2020-01-13 11:34:02,696 main - OrthogonalNode{x=2, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:02,696 main - OrthogonalNode{x=2, y=2, value=1, rowPreNode=null}
+2020-01-13 11:34:02,696 main - OrthogonalNode{x=2, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:02,696 main - OrthogonalNode{x=2, y=4, value=1, rowPreNode=null}
+2020-01-13 11:34:02,696 main - OrthogonalNode{x=3, y=0, value=1, rowPreNode=null}
+2020-01-13 11:34:02,697 main - OrthogonalNode{x=3, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:02,697 main - OrthogonalNode{x=3, y=2, value=1, rowPreNode=null}
+2020-01-13 11:34:02,697 main - OrthogonalNode{x=3, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:02,697 main - OrthogonalNode{x=3, y=4, value=1, rowPreNode=null}
+2020-01-13 11:34:02,698 main - OrthogonalNode{x=4, y=0, value=1, rowPreNode=null}
+2020-01-13 11:34:02,698 main - OrthogonalNode{x=4, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:02,698 main - OrthogonalNode{x=4, y=2, value=1, rowPreNode=null}
+2020-01-13 11:34:02,698 main - OrthogonalNode{x=4, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:02,698 main - OrthogonalNode{x=4, y=4, value=1, rowPreNode=null}
+2020-01-13 11:34:47,120 main - OrthogonalNode{x=0, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:47,122 main - OrthogonalNode{x=0, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:47,122 main - OrthogonalNode{x=1, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:47,123 main - OrthogonalNode{x=1, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:47,123 main - OrthogonalNode{x=2, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:47,123 main - OrthogonalNode{x=2, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:47,123 main - OrthogonalNode{x=3, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:47,123 main - OrthogonalNode{x=3, y=3, value=1, rowPreNode=null}
+2020-01-13 11:34:47,125 main - OrthogonalNode{x=4, y=1, value=1, rowPreNode=null}
+2020-01-13 11:34:47,125 main - OrthogonalNode{x=4, y=3, value=1, rowPreNode=null}
+2020-01-13 11:45:41,715 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 11:45:41,718 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 11:45:41,718 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 11:45:41,718 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 11:45:41,718 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 11:45:41,718 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 11:45:41,718 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 11:45:41,718 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 11:45:41,721 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 11:45:41,721 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 11:48:40,106 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 11:48:40,108 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 11:48:40,108 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 11:48:40,109 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 11:48:40,109 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 11:48:40,109 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 11:48:40,109 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 11:48:40,109 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 11:48:40,112 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 11:48:40,112 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 11:53:53,788 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 11:53:53,790 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 11:53:53,791 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 11:53:53,791 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 11:53:53,791 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 11:53:53,791 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 11:53:53,791 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 11:53:53,791 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 11:53:53,793 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 11:53:53,793 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 11:59:40,774 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 11:59:40,777 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 11:59:40,777 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 11:59:40,777 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 11:59:40,778 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 11:59:40,778 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 11:59:40,778 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 11:59:40,778 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 11:59:40,781 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 11:59:40,782 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 11:59:59,468 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 11:59:59,470 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 11:59:59,470 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 11:59:59,470 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 11:59:59,470 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 11:59:59,470 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 11:59:59,470 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 11:59:59,471 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 11:59:59,473 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 11:59:59,473 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 11:59:59,473 main - test
+2020-01-13 11:59:59,473 main - test
+2020-01-13 12:00:46,353 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 12:00:46,355 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 12:00:46,355 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 12:00:46,355 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 12:00:46,355 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 12:00:46,355 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 12:00:46,355 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 12:00:46,355 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 12:00:46,358 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 12:00:46,358 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 12:00:46,358 main - test
+2020-01-13 12:00:46,358 main - test
+2020-01-13 12:01:28,562 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 12:01:28,564 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 12:01:28,564 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 12:01:28,564 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 12:01:28,564 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 12:01:28,565 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 12:01:28,565 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 12:01:28,565 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 12:01:28,567 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 12:01:28,567 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 12:01:28,567 main - test
+2020-01-13 12:01:28,567 main - test
+2020-01-13 12:01:48,934 main - OrthogonalNode{x=0, y=1, value=1}
+2020-01-13 12:01:48,936 main - OrthogonalNode{x=0, y=3, value=1}
+2020-01-13 12:01:48,936 main - OrthogonalNode{x=1, y=1, value=1}
+2020-01-13 12:01:48,936 main - OrthogonalNode{x=1, y=3, value=1}
+2020-01-13 12:01:48,937 main - OrthogonalNode{x=2, y=1, value=1}
+2020-01-13 12:01:48,937 main - OrthogonalNode{x=2, y=3, value=1}
+2020-01-13 12:01:48,937 main - OrthogonalNode{x=3, y=1, value=1}
+2020-01-13 12:01:48,937 main - OrthogonalNode{x=3, y=3, value=1}
+2020-01-13 12:01:48,939 main - OrthogonalNode{x=4, y=1, value=1}
+2020-01-13 12:01:48,939 main - OrthogonalNode{x=4, y=3, value=1}
+2020-01-13 12:01:48,939 main - test
+2020-01-13 12:01:48,939 main - test

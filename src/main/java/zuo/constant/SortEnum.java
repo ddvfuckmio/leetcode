@@ -40,8 +40,10 @@ public enum SortEnum {
             NormalSort.bubbleSort(array);
         }
     },
-
-	InsertSort(4,"插入排序"){
+	/**
+	 * 插入排序
+	 */
+	Insert_Sort(4,"插入排序"){
 		@Override
 		public void sort(int[] array) {
 			NormalSort.insertSort(array);

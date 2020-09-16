@@ -1,4 +1,4 @@
-import utlis.Utils;
+import java.lang.reflect.Field;
 
 /**
  * @author : ddv
@@ -6,13 +6,27 @@ import utlis.Utils;
  */
 
 public class Test {
+    class A {
+        public  String id;
+    }
+
+    class B extends A{
+
+	}
 
     @org.junit.Test
-    public void test() {
-        int[] src = new int[] {0, 1, 2, 3, 4, 5};
-        int[] dest = new int[] {1, 2, 3, 4, 5};
-        System.arraycopy(src, 0, src, 1, 3);
-        Utils.logArray(src);
-//        Utils.logArray(dest);
-    }
+    public void test() throws NoSuchFieldException {
+		Class<B> bClass = B.class;
+		Field[] declaredFields = bClass.getDeclaredFields();
+		for (Field declaredField : declaredFields) {
+
+		}
+
+		Field declaredField = bClass.getDeclaredField("id");
+		try {
+			bClass.getField("id");
+		} catch (NoSuchFieldException e) {
+			e.printStackTrace();
+		}
+	}
 }

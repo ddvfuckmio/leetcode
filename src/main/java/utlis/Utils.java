@@ -1,13 +1,26 @@
 package utlis;
 
 import java.security.MessageDigest;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.UUID;
 
 import zuo.constant.SortEnum;
 
 public class Utils {
 
     private static final String SALT = "ddv";
+
+    public static int[][] array2;
+
+    static {
+        array2 = new int[5][5];
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                array2[i][j] = 1;
+            }
+        }
+    }
 
     public static void swapElement(int[] array, int a, int b) {
         // System.out.print(a + " " + b + " ");
@@ -16,6 +29,12 @@ public class Utils {
         array[b] = temp;
 
         // logArray(array);
+    }
+
+    public static void logArray2(int[][] mapData) {
+        for (int[] mapDatum : mapData) {
+            logArray(mapDatum);
+        }
     }
 
     public void swap(char[] chars, int start, int end) {
@@ -152,19 +171,19 @@ public class Utils {
         return hexValue.toString();
     }
 
-    public static void main(String[] args) {
-        // 运行100W次
-        int size = 10000 * 100;
-        Random random = new Random();
-        Map<Integer, Integer> result = new HashMap<>();
-        for (int i = 0; i < size; i++) {
-            int num = random.nextInt(9) + 1;
-            result.putIfAbsent(num, 0);
-            int times = result.get(num);
-            result.put(num, times + 1);
-        }
-
-        System.out.println("样本数量:" + size);
-        result.forEach((num, times) -> System.out.println("num :" + num + " times:" + times));
-    }
+    // public static void main(String[] args) {
+    //// // 运行100W次
+    //// int size = 10000 * 100;
+    //// Random random = new Random();
+    //// Map<Integer, Integer> result = new HashMap<>();
+    //// for (int i = 0; i < size; i++) {
+    //// int num = random.nextInt(9) + 1;
+    //// result.putIfAbsent(num, 0);
+    //// int times = result.get(num);
+    //// result.put(num, times + 1);
+    //// }
+    ////
+    //// System.out.println("样本数量:" + size);
+    //// result.forEach((num, times) -> System.out.println("num :" + num + " times:" + times));
+    // }
 }
